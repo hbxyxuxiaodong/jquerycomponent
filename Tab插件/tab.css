@@ -1,0 +1,51 @@
+body {
+  font-size: 12px ;
+  margin: 0;
+  background: #323232;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tab {
+  width: 300px;
+}
+.tab .tab-nav {
+  height: 30px;
+}
+.tab .tab-nav li {
+  float: left;
+  margin-right: 5px;
+  background: #767676;
+  border-radius: 3px 3px 0 0;
+}
+.tab .tab-nav li a {
+  display: block;
+  height: 30px;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 30px;
+  text-decoration: none;
+}
+.tab .tab-nav li.actived {
+  background: #fff;
+}
+.tab .tab-nav li.actived a {
+  color: #777;
+}
+.tab .content-warp {
+  background: #fff;
+  padding: 5px;
+  height: 200px;
+}
+.tab .content-warp .content-item {
+  position: absolute;
+  width: 290px;
+  height: 200px;
+  overflow: hidden;
+  display: none;
+}
+.tab .content-warp .content-item.current {
+  display: block;
+}

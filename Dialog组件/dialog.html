@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="dialog.css">
+</head>
+<body>
+<script src="jquery-1.7.2.js"></script>
+<script src="dialog.js"></script>
+<script>
+  var diaLog=new Dialog(
+    {
+    wih:300,
+    //对话框的高度
+    //对话框的消息
+    message:'好吗',
+    //对话框的类型
+    type:'warning',
+    //对话框的延迟时间
+    //对话框的按钮,
+    button:[
+      {
+        type:'green',
+        text:'确定',
+        cb:function(){
+            alert('你点击了确定按钮')
+        }
+      } ,
+      {
+        type:'red',
+        text:'取消'
+//        cb:function(){
+//            alert('你点击了取消按钮')
+//        }
+      }
+    ],
+    //对话框遮罩层的透明度
+    maskOpacity:0.3
+   }
+  )
+</script>
+</body>
+</html>
